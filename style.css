@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedor {
+  border: 0.1em solid black;
+  position: relative;
+  height: 900px;
+  background-color: transparent;
+  width: 900px;
+  margin: 0 auto;
+}
+
+  .cara {
+    z-index: 10;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    background-color: #cacaca;
+    border-radius: 100%;
+    border: 3px solid black;
+  }
+
+    .tapon {
+      position: absolute;
+        top: 250px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 144px;
+        z-index: 11;
+        background-color: #cacaca;
+    }
+
+    .mandibula {
+      z-index: 9;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 100px;
+      margin: auto;
+      height: 100px;
+      width: 150px;
+      background-color: #cacaca;
+      border-bottom-left-radius:  1em;
+      border-bottom-right-radius: 1em;
+      border: 3px solid black;
+    }
+
+      .diente-iz {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 50px;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 0px;
+        z-index: 11;
+        border: 2px solid black;
+      }
+
+      .diente-de {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50px;
+        width: 0px;
+        z-index: 11;
+        border: 2px solid black;
+      }
+
+    .ojos {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100px;
+      width: 300px;
+      margin: 0 auto;
+      z-index: 11;
+    }
+
+      .ojo {
+        border-radius: 50%;
+        height: 100px;
+        width: 90px;
+        background-color: black;
+        z-index: 12;
+      }
+
+      .ojo-iz {
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 145px;
+        bottom: 0;
+        z-index: 12;
+      }
+
+      .ojo-de {
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 145px;
+        right: 0;
+        bottom: 0;
+        z-index: 12;
+      }
+
+        .pupila {
+          margin: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          background-color: white;
+          box-shadow: white 1px 1px 5px;
+          z-index: 13;
+        }
+
+    .nariz{
+      width: 0;
+      height: 0;
+      border-right: 25px solid transparent;
+      border-bottom: 50px solid black;
+      border-left: 25px solid transparent;
+      margin: auto;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 14;
+      }
+
+  .torso {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 25px;
+    margin: auto;
+    z-index: 1;
+  }
+
+    .hueso-base {
+      margin: auto;
+      background-color: #cacaca;
+      width: 60px;
+      height: 200px;
+      z-index: 2;
+    }
+
+      .hueso-borde {
+        background-color: #cacaca;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+      }
+
+      .hueso-ar-iz {
+        position: absolute;
+          top: -15px;
+          left: -45px;
+          right: 0;
+          bottom: 0;
+          margin: 0 auto;
+          z-index: 4;
+      }
+
+      .hueso-ar-de {
+        position: absolute;
+          top: -15px;
+          left: 0;
+          right: -45px;
+          bottom: 0;
+          margin: 0 auto;
+          z-index: 4;
+      }
+
+      .hueso-de-iz {
+        position: absolute;
+          top: 90px;
+          left: 0;
+          right: 45px;
+          bottom: 0;
+          margin: auto;
+          z-index: 4;
+      }
+
+      .hueso-de-de {
+        position: absolute;
+          top: 90px;
+          left: 45px;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 4;
+      }
