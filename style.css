@@ -3,7 +3,6 @@
 }
 
 .contenedor {
-  border: 0.1em solid black;
   position: relative;
   height: 900px;
   background-color: transparent;
@@ -163,14 +162,32 @@
       width: 60px;
       height: 200px;
       z-index: 2;
+      border: 3px solid black;
     }
 
+    .hueso-base-pegote {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 84px;
+      background-color: #cacaca;
+      width: 54px;
+      height: 194px;
+      z-index: 5;
+    }
+
+
       .hueso-borde {
+        position: absolute;
+        
         background-color: #cacaca;
         border-radius: 50%;
         width: 50px;
         height: 50px;
         z-index: 3;
+        border: 3px solid black;
       }
 
       .hueso-ar-iz {
@@ -212,3 +229,103 @@
           margin: auto;
           z-index: 4;
       }
+
+    .articulacion {
+       background-color: #cacaca;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        z-index: 3;
+        border: 3px solid black;
+        margin: auto;
+    }
+
+    .patas {
+      position: absolute;
+      top: 200px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100px;
+      width: 295px;
+      margin:  auto;
+      z-index: 6;
+    }
+
+      .pata-iz {
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 125px;
+        bottom: 0;
+        width: 100px;
+        height: 50px;
+        border-top-left-radius: 50px;
+        z-index: 6;
+        border: 3px solid black;
+        margin: auto;
+      }
+
+      .pata-de {
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        left: 125px;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 50px;
+        border-top-right-radius: 50px;
+        z-index: 6;
+        border: 3px solid black;
+        margin: auto;
+      }
+
+    .logo-iz {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      width: 50px;
+      height: 70px;
+    }
+
+    .logo-de {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      width: 50px;
+      height: 70px;
+      transform: scaleX(-1);
+    }
+
+    .naik {
+      width: 22px;
+      height: 44px;
+      border-radius: 40px 40px 0 0;
+      background-color: white; 
+      position: relative;
+      transform: rotate(240deg);
+      margin: 20px; 
+    }
+
+    .niak {
+      width: 22px;
+      height: 44px;
+      border-radius: 40px 40px 0 0;
+      background-color: gray; 
+      position: absolute;
+      top: 8px;
+      left: 3px;
+      transform: rotate(10deg);
+    }
+
+
+      
+    
