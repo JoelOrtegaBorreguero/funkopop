@@ -1,5 +1,13 @@
 * {
   box-sizing: border-box;
+  }
+
+body {
+  animation-duration: 5s;
+  animation-name: fiesta;
+  animation-iteration-count: 3;
+  animation-delay: 15s;
+  animation-direction:  alternate-reverse;
 }
 
 .contenedor {
@@ -8,6 +16,11 @@
   background-color: transparent;
   width: 900px;
   margin: 0 auto;
+  animation-duration: 10s;
+  animation-name: caminar;
+  animation-iteration-count: 2;
+  animation-delay: 10s;
+  animation-direction: normal;
 }
 
   .cara {
@@ -105,6 +118,9 @@
         right: 145px;
         bottom: 0;
         z-index: 12;
+        background-image: linear-gradient( 135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #FF7CAE);
+        background-size: 500%;
+        animation: siiin 10s infinite;
       }
 
       .ojo-de {
@@ -115,6 +131,9 @@
         right: 0;
         bottom: 0;
         z-index: 12;
+        background-image: linear-gradient( 135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #FF7CAE);
+        background-size: 500%;
+         animation: siiin 10s infinite;
       }
 
         .pupila {
@@ -265,6 +284,11 @@
         z-index: 6;
         border: 3px solid black;
         margin: auto;
+        animation-duration: 2s;
+        animation-name: patas;
+        animation-iteration-count: 10;
+        animation-delay: 10s;
+        animation-direction: reverse;
       }
 
       .pata-de {
@@ -280,6 +304,11 @@
         z-index: 6;
         border: 3px solid black;
         margin: auto;
+        animation-duration: 2s;
+        animation-name: patas;
+        animation-iteration-count: 10;
+        animation-delay: 10s;
+        animation-direction: normal;
       }
 
     .logo-iz {
@@ -325,3 +354,265 @@
       left: 3px;
       transform: rotate(10deg);
     }
+
+.jumscare {
+  background-color: transparent;
+  height: 384px;
+  width: 649px;
+  position: absolute;
+  margin: auto;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-duration: 2s;
+  animation-name: bromita;
+  animation-iteration-count: 1;
+  opacity: 0%;
+  animation-delay: 5s;
+  animation-direction: normal;
+}
+
+.tumba {
+  background-color: rgb(109, 109, 109);
+  height: 850px;
+  width: 600px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  margin: auto;
+  z-index: 101;
+  opacity: 0%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-duration: 4s;
+  animation-name: caja;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  z-index: 1000;
+}
+
+  .tumba-base {
+    background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top: 750px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+  }
+
+  .dead {
+    background-color: transparent;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    z-index: 1001;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+  }
+
+  .tumba-1 {
+    animation-duration: 4s;
+    animation-name: e-lobby;
+    animation-iteration-count: 1;
+    animation-delay: 31s;
+    animation-direction: normal;
+  }
+
+  .tumba-2 {
+    animation-duration: 5s;
+    animation-name: e-lobby;
+    animation-iteration-count: infinite;
+    animation-delay: 35s;
+    animation-direction: normal;
+  }
+
+
+@keyframes bromita {
+  0% {
+    opacity: 0%;
+    scale: 100%;
+  }
+
+  20% {
+    opacity: 100%;
+  }
+
+  30% {
+    scale: 100%;
+  }
+  
+  98% {
+    scale: 1000%;
+  }
+
+  99% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    scale: 5000%;
+  }
+
+}
+
+@keyframes siiin {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  } 
+}
+
+@keyframes patas {
+  0% {
+    top: 0px;
+  }
+
+  25% {
+    top: 25px;
+  }
+
+  50% {
+    top: 0px;
+  }
+
+  75%{
+    bottom: 25px;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes caminar {
+  0% {
+    left: 0px;
+  }
+
+  25% {
+    left: 500px;
+  }
+
+  50% {
+    left: 0px;
+  }
+  
+
+  75%{
+    left: -500px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes caja {
+  0% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fiesta {
+  0% {
+    background-color: white;
+  }
+
+  10% {
+    background-color: aqua;
+  }
+  
+  20% {
+    background-color: aquamarine;
+}
+
+  30% {
+    background-color: blue;
+  }
+
+  40% {
+    background-color: pink;
+  }
+
+  50% {
+    background-color: darkcyan;
+  }
+
+  60% {
+    background-color: green;
+  }
+
+  70% {
+    background-color: purple;
+  }
+
+  80% {
+    background-color: crimson;
+  }
+
+  90% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: orange;
+  }
+}
+
+@keyframes e-lobby {
+  0% {
+    opacity: 0%;
+  }
+
+  80% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+}
+
+@keyframes lobby {
+  0% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+}
