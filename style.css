@@ -33,6 +33,11 @@ body {
     background-color: #cacaca;
     border-radius: 100%;
     border: 3px solid black;
+    animation-duration: 2s;
+    animation-name: centrar-c;
+    animation-delay: 36s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
     .tapon {
@@ -62,6 +67,11 @@ body {
       border-bottom-left-radius:  1em;
       border-bottom-right-radius: 1em;
       border: 3px solid black;
+      animation-duration: 2s;
+      animation-name: centrar-c;
+      animation-delay: 36s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
 
       .diente-iz {
@@ -149,6 +159,11 @@ body {
           background-color: white;
           box-shadow: white 1px 1px 5px;
           z-index: 13;
+          animation-duration: 4s;
+          animation-name: adios;
+          animation-delay: 36s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
         }
 
     .nariz{
@@ -173,6 +188,11 @@ body {
     top: 25px;
     margin: auto;
     z-index: 1;
+    animation-duration: 4s;
+    animation-name: adios;
+    animation-delay: 36s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
   }
 
     .hueso-base {
@@ -425,21 +445,56 @@ body {
   }
 
   .tumba-1 {
-    animation-duration: 4s;
-    animation-name: e-lobby;
-    animation-iteration-count: 1;
-    animation-delay: 31s;
-    animation-direction: normal;
+  background-color: rgb(109, 109, 109);
+  height: 850px;
+  width: 600px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  margin: auto;
+  z-index: 101;
+  opacity: 0%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-duration: 4s;
+  animation-name: caja;
+  animation-delay: 31s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+  z-index: 1000;
+}
+
+  .tumba-base-1 {
+    background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top: 750px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
   }
 
-  .tumba-2 {
-    animation-duration: 5s;
-    animation-name: e-lobby;
-    animation-iteration-count: infinite;
-    animation-delay: 35s;
-    animation-direction: normal;
+  .dead-1 {
+    background-color: transparent;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    z-index: 1001;
+    font-size: 5em;
+    text-align: center;
+    color: white;
   }
-
+  
 
 @keyframes bromita {
   0% {
@@ -541,6 +596,20 @@ body {
   }
 }
 
+@keyframes caja-1 {
+  0% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
 @keyframes fiesta {
   0% {
     background-color: white;
@@ -613,6 +682,28 @@ body {
 
   100% {
     opacity: 100%;
+  }
+
+}
+
+@keyframes adios {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+
+}
+
+@keyframes centrar-c {
+  0% {
+    top: 200px;
+  }
+
+  100% {
+    top: 250px;
   }
 
 }
